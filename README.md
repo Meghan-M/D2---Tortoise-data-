@@ -1,6 +1,6 @@
-#How sexual selection influences body shape and size in the fighting tortoise#
-Author: Meghan Miehe
-Date: 2/22/2026
+#**How sexual selection influences body shape and size in the fighting tortoise**#
+##Author: Meghan Miehe##
+##Date: 2/22/2026##
 
 This repository is the study on how sexual selection influences body shape and size in the fighting tortoise. I will be working with this data, raw and cleaned data files shown in file "Data', to further the understanding of the fighting tortoises, analysing the data from various figures, which can be found in the file 'Study figures' , with descriptive captions. The dataset is from Justin O'Rian's previous study on these tortoises, and hence attribute data collection to him and his team, the collection outlines within the study design section. 
 
