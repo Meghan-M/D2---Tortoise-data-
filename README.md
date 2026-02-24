@@ -21,7 +21,8 @@ Janitor was used to clean the varaibale heading names, to a cleaner name that pr
 Tidyverse and dplyr were used to tidy the code, converting the categorical variables, sex, habitat and behavior into factors and converting the table to long format.
 ggplot2 was used to format and produce the plots.
 
-
+Binder badge: 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Meghan-M/D2---Tortoise-data-/HEAD)
 
 
 
