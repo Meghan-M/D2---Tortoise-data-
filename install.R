@@ -1,6 +1,7 @@
-install.packages("rmarkdown")
+
+install.packages("ggplot2")
 install.packages("tidyverse")
-install.packages("sf")
-install.packages("mapview")
-install.packages("leafpop")
-install.packages("rinat")
+install.packages("dplyl")
+install.packages("janitor")
+install.packages("read.xls")
+
