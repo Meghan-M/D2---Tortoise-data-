@@ -91,30 +91,17 @@ ggplot(width_data, aes(x = sex, y = measurement_value, fill = sex)) +
     panel.grid.minor = element_line(color = "grey85") ##makes reading the graph easier
   )
 
-tort_filtered %>%
-  filter(measurement_type != "weight") %>%
-  ggplot(aes(x = measurement_type, y = measurement_value, fill = sex)) +
-  geom_boxplot(position = position_dodge(width = 0.8),
-               outlier.shape = NA) +
-  coord_cartesian(ylim = c(0, 300)) +  
- scale_y_continuous(breaks = seq(0, 300, by = 10)) +# adjust upper limit as needed
-  theme_bw() +
-  labs( x = "Measurement Type",
-       y = "Measurement value") +
-  scale_fill_manual(values = c("M" = "yellow",
-                               "F" = "pink")) +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))
-
+##plot all variables against sex, to see comaprisons between them
 tort_filtered%>%
   filter(measurement_type != "weight") %>%
   ggplot(aes(x = measurement_type, y = measurement_value, fill = sex)) +
   geom_boxplot(position = position_dodge(width = 0.8),
-               outlier.shape = NA) +
+               outlier.shape = NA) + #remove outliers to expand plots vertically
   coord_cartesian(ylim = c(0, 300)) +
-  scale_y_continuous(breaks = seq(0, 300, by = 50)) +
+  scale_y_continuous(breaks = seq(0, 300, by = 50)) + #expand y axis 
   theme_bw() +
   labs(x = "Measurement Type",
        y = "Value") +
-  scale_fill_manual(values = c("M" = "steelblue",
-                               "F" = "tomato")) +
+  scale_fill_manual(values = c("M" = "yellow",##make colour blind friendly
+                               "F" = "pink")) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
